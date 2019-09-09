@@ -1797,13 +1797,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
 
 
 
@@ -2059,60 +2052,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Navigation"
 });
@@ -2281,6 +2220,8 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -2300,10 +2241,9 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       action_user_change_status: 'change-status'
     };
   },
-  created: function created() {
-    this.load();
-  },
-  mounted: function mounted() {//example socket
+  created: function created() {},
+  mounted: function mounted() {
+    this.load(); //example socket
     // this.$socket.emit('client_clear_time');
     // this.$socket.emit("status_button_client",{user:this.getStoreUser()});
   },
@@ -2488,7 +2428,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -2564,7 +2504,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -2602,7 +2542,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -4981,45 +4921,6 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "row" }, [
       _c("div", { staticClass: "col-sm-12" }, [
-        _c("div", { staticClass: "btn-group pull-right m-t-15" }, [
-          _c(
-            "button",
-            {
-              staticClass:
-                "btn btn-custom dropdown-toggle waves-effect waves-light",
-              attrs: {
-                type: "button",
-                "data-toggle": "dropdown",
-                "aria-expanded": "false"
-              }
-            },
-            [
-              _vm._v("Settings "),
-              _c("span", { staticClass: "m-l-5" }, [
-                _c("i", { staticClass: "fa fa-cog" })
-              ])
-            ]
-          ),
-          _vm._v(" "),
-          _c("ul", { staticClass: "dropdown-menu", attrs: { role: "menu" } }, [
-            _c("li", [_c("a", { attrs: { href: "#" } }, [_vm._v("Action")])]),
-            _vm._v(" "),
-            _c("li", [
-              _c("a", { attrs: { href: "#" } }, [_vm._v("Another action")])
-            ]),
-            _vm._v(" "),
-            _c("li", [
-              _c("a", { attrs: { href: "#" } }, [_vm._v("Something else here")])
-            ]),
-            _vm._v(" "),
-            _c("li", { staticClass: "divider" }),
-            _vm._v(" "),
-            _c("li", [
-              _c("a", { attrs: { href: "#" } }, [_vm._v("Separated link")])
-            ])
-          ])
-        ]),
-        _vm._v(" "),
         _c("h4", { staticClass: "page-title" }, [_vm._v("Dashboard")])
       ])
     ])
@@ -5259,8 +5160,6 @@ var render = function() {
             1
           ),
           _vm._v(" "),
-          _vm._m(0),
-          _vm._v(" "),
           _c(
             "li",
             { staticClass: "has-submenu" },
@@ -5268,216 +5167,21 @@ var render = function() {
               _c("router-link", { attrs: { to: "/user" } }, [
                 _c("i", { staticClass: "zmdi zmdi-collection-text" }),
                 _c("span", [_vm._v(" User ")])
-              ]),
-              _vm._v(" "),
-              _vm._m(1)
+              ])
             ],
             1
           ),
           _vm._v(" "),
-          _vm._m(2),
+          _c("li", { staticClass: "has-submenu" }),
+          _vm._m(0),
           _vm._v(" "),
-          _vm._m(3),
-          _vm._v(" "),
-          _vm._m(4),
-          _vm._v(" "),
-          _vm._m(5)
+          _vm._m(1)
         ])
       ])
     ])
   ])
 }
 var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("li", { staticClass: "has-submenu" }, [
-      _c("a", { attrs: { href: "#" } }, [
-        _c("i", { staticClass: "zmdi zmdi-invert-colors" }),
-        _vm._v(" "),
-        _c("span", [_vm._v(" User Interface ")])
-      ]),
-      _vm._v(" "),
-      _c("ul", { staticClass: "submenu megamenu" }, [
-        _c("li", [
-          _c("ul", [
-            _c("li", [_c("a", { attrs: { href: "#" } }, [_vm._v("Buttons")])]),
-            _vm._v(" "),
-            _c("li", [_c("a", { attrs: { href: "#" } }, [_vm._v("Cards")])]),
-            _vm._v(" "),
-            _c("li", [
-              _c("a", { attrs: { href: "#" } }, [_vm._v("Draggable Cards")])
-            ]),
-            _vm._v(" "),
-            _c("li", [
-              _c("a", { attrs: { href: "#" } }, [_vm._v("Typography ")])
-            ]),
-            _vm._v(" "),
-            _c("li", [
-              _c("a", { attrs: { href: "#" } }, [_vm._v("Checkboxs-Radios")])
-            ]),
-            _vm._v(" "),
-            _c("li", [
-              _c("a", { attrs: { href: "#" } }, [
-                _vm._v("Material Design Icons")
-              ])
-            ]),
-            _vm._v(" "),
-            _c("li", [
-              _c("a", { attrs: { href: "#" } }, [_vm._v("Font Awesome")])
-            ]),
-            _vm._v(" "),
-            _c("li", [
-              _c("a", { attrs: { href: "#" } }, [_vm._v("Themify Icons")])
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("li", [
-          _c("ul", [
-            _c("li", [
-              _c("a", { attrs: { href: "#" } }, [_vm._v("Dripicons")])
-            ]),
-            _vm._v(" "),
-            _c("li", [_c("a", { attrs: { href: "#" } }, [_vm._v("Modals")])]),
-            _vm._v(" "),
-            _c("li", [
-              _c("a", { attrs: { href: "#" } }, [_vm._v("Notification")])
-            ]),
-            _vm._v(" "),
-            _c("li", [
-              _c("a", { attrs: { href: "#" } }, [_vm._v("Range Slider")])
-            ]),
-            _vm._v(" "),
-            _c("li", [
-              _c("a", { attrs: { href: "#" } }, [_vm._v("Components")])
-            ]),
-            _c("li", [
-              _c("a", { attrs: { href: "#" } }, [_vm._v("Sweet Alert")])
-            ]),
-            _c("li", [
-              _c("a", { attrs: { href: "#" } }, [_vm._v("Tree view")])
-            ]),
-            _c("li", [_c("a", { attrs: { href: "#" } }, [_vm._v("Widgets")])])
-          ])
-        ])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("ul", { staticClass: "submenu" }, [
-      _c("li", [
-        _c("a", { attrs: { href: "#" } }, [_vm._v("General Elements")])
-      ]),
-      _vm._v(" "),
-      _c("li", [_c("a", { attrs: { href: "#" } }, [_vm._v("Advanced Form")])]),
-      _vm._v(" "),
-      _c("li", [
-        _c("a", { attrs: { href: "#" } }, [_vm._v("Form Validation")])
-      ]),
-      _vm._v(" "),
-      _c("li", [_c("a", { attrs: { href: "#" } }, [_vm._v("Form Wizard")])]),
-      _vm._v(" "),
-      _c("li", [_c("a", { attrs: { href: "#" } }, [_vm._v("Form Uploads")])]),
-      _vm._v(" "),
-      _c("li", [
-        _c("a", { attrs: { href: "#" } }, [_vm._v("Wysiwig Editors")])
-      ]),
-      _vm._v(" "),
-      _c("li", [_c("a", { attrs: { href: "#" } }, [_vm._v("X-editable")])])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("li", { staticClass: "has-submenu" }, [
-      _c("a", { attrs: { href: "#" } }, [
-        _c("i", { staticClass: "zmdi zmdi-view-list" }),
-        _vm._v(" "),
-        _c("span", [_vm._v(" Tables ")])
-      ]),
-      _vm._v(" "),
-      _c("ul", { staticClass: "submenu" }, [
-        _c("li", [
-          _c("a", { attrs: { href: "tables-basic.html" } }, [
-            _vm._v("Basic Tables")
-          ])
-        ]),
-        _vm._v(" "),
-        _c("li", [
-          _c("a", { attrs: { href: "tables-datatable.html" } }, [
-            _vm._v("Data Table")
-          ])
-        ]),
-        _vm._v(" "),
-        _c("li", [
-          _c("a", { attrs: { href: "tables-responsive.html" } }, [
-            _vm._v("Responsive Table")
-          ])
-        ]),
-        _vm._v(" "),
-        _c("li", [
-          _c("a", { attrs: { href: "tables-editable.html" } }, [
-            _vm._v("Editable Table")
-          ])
-        ]),
-        _vm._v(" "),
-        _c("li", [
-          _c("a", { attrs: { href: "tables-tablesaw.html" } }, [
-            _vm._v("Tablesaw Table")
-          ])
-        ])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("li", { staticClass: "has-submenu" }, [
-      _c("a", { attrs: { href: "#" } }, [
-        _c("i", { staticClass: "zmdi zmdi-chart" }),
-        _c("span", [_vm._v(" Charts ")])
-      ]),
-      _vm._v(" "),
-      _c("ul", { staticClass: "submenu" }, [
-        _c("li", [
-          _c("a", { attrs: { href: "chart-flot.html" } }, [
-            _vm._v("Flot Chart")
-          ])
-        ]),
-        _vm._v(" "),
-        _c("li", [
-          _c("a", { attrs: { href: "chart-morris.html" } }, [
-            _vm._v("Morris Chart")
-          ])
-        ]),
-        _vm._v(" "),
-        _c("li", [
-          _c("a", { attrs: { href: "chart-chartist.html" } }, [
-            _vm._v("Chartist Charts")
-          ])
-        ]),
-        _vm._v(" "),
-        _c("li", [
-          _c("a", { attrs: { href: "chart-chartjs.html" } }, [
-            _vm._v("Chartjs Chart")
-          ])
-        ]),
-        _vm._v(" "),
-        _c("li", [
-          _c("a", { attrs: { href: "chart-other.html" } }, [
-            _vm._v("Other Chart")
-          ])
-        ])
-      ])
-    ])
-  },
   function() {
     var _vm = this
     var _h = _vm.$createElement
@@ -5822,89 +5526,69 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "card-box" }, [
     _c("div", { staticClass: "table-rep-plugin" }, [
-      _c(
-        "div",
-        {
-          staticClass: "table-responsive",
-          attrs: { "data-pattern": "priority-columns" }
-        },
-        [
-          _c(
-            "table",
-            {
-              staticClass: "table  table-striped",
-              attrs: { id: "tech-companies-1" }
-            },
-            [
-              _vm._m(0),
-              _vm._v(" "),
-              _c(
-                "tbody",
-                _vm._l(_vm.pagination.data, function(item, index) {
-                  return _c("tr", [
-                    _c("th", [_vm._v(_vm._s(index + 1))]),
-                    _vm._v(" "),
-                    _c("td", [_vm._v(_vm._s(item.username))]),
-                    _vm._v(" "),
-                    _c("td", [
-                      _vm._v(
-                        _vm._s(item.firstname) +
-                          " " +
-                          _vm._s(item.lastname) +
-                          " "
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("td", [_vm._v(_vm._s(item.email))]),
-                    _vm._v(" "),
-                    _c("td", [_vm._v(_vm._s(item.type))]),
-                    _vm._v(" "),
-                    _c("td", [_vm._v(_vm._s(item.status))]),
-                    _vm._v(" "),
-                    _c("td", [
-                      _vm._v(
-                        _vm._s(
-                          new Date(item.created_at * 1000).toLocaleString()
-                        )
-                      )
-                    ])
-                  ])
-                }),
-                0
-              )
-            ]
-          ),
+      _c("div", { staticClass: "table-responsive" }, [
+        _c("table", { staticClass: "table  table-striped" }, [
+          _vm._m(0),
           _vm._v(" "),
           _c(
-            "div",
-            {
-              staticClass:
-                "dataTables_paginate paging_simple_numbers pull-right"
-            },
-            [
-              _c(
-                "paginate",
-                {
-                  attrs: {
-                    pageCount: _vm.pagination.last_page
-                      ? _vm.pagination.last_page
-                      : 1,
-                    clickHandler: _vm.pageRedirect,
-                    prevText: "Prev",
-                    nextText: "Next",
-                    containerClass: "pagination",
-                    "next-class": "paginate_button page-item nexts  ",
-                    "prev-class": "paginate_button page-item previous ",
-                    "page-class": "paginate_button"
-                  }
-                },
-                [_vm._v("\n                    >\n                ")]
-              )
-            ],
-            1
+            "tbody",
+            _vm._l(_vm.pagination.data, function(item, index) {
+              return _c("tr", { key: index }, [
+                _vm._m(1, true),
+                _vm._v(" "),
+                _c("td", [_vm._v(_vm._s(item.username))]),
+                _vm._v(" "),
+                _c("td", [
+                  _vm._v(
+                    _vm._s(item.firstname) + " " + _vm._s(item.lastname) + " "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("td", [_vm._v(_vm._s(item.email))]),
+                _vm._v(" "),
+                _c("td", [_vm._v(_vm._s(item.type))]),
+                _vm._v(" "),
+                _c("td", [_vm._v(_vm._s(item.status))]),
+                _vm._v(" "),
+                _c("td", [
+                  _vm._v(
+                    _vm._s(new Date(item.created_at * 1000).toLocaleString())
+                  )
+                ])
+              ])
+            }),
+            0
           )
-        ]
-      )
+        ]),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass: "dataTables_paginate paging_simple_numbers pull-right"
+          },
+          [
+            _c(
+              "paginate",
+              {
+                attrs: {
+                  pageCount: _vm.pagination.last_page
+                    ? _vm.pagination.last_page
+                    : 1,
+                  clickHandler: _vm.pageRedirect,
+                  prevText: "Prev",
+                  nextText: "Next",
+                  containerClass: "pagination",
+                  "next-class": "paginate_button page-item nexts  ",
+                  "prev-class": "paginate_button page-item previous ",
+                  "page-class": "paginate_button"
+                }
+              },
+              [_vm._v("\n                    >\n                ")]
+            )
+          ],
+          1
+        )
+      ])
     ])
   ])
 }
@@ -5929,6 +5613,15 @@ var staticRenderFns = [
         _vm._v(" "),
         _c("th", { attrs: { "data-priority": "6" } }, [_vm._v("Created")])
       ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("td", [
+      _vm._v("GOOG "),
+      _c("span", { staticClass: "co-name" }, [_vm._v("Google Inc.")])
     ])
   }
 ]
@@ -21866,36 +21559,7 @@ __webpack_require__.r(__webpack_exports__);
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vuex__WEBPACK_IMPORTED_MODULE_1__["default"]);
 /* harmony default export */ __webpack_exports__["default"] = (new vuex__WEBPACK_IMPORTED_MODULE_1__["default"].Store({
   strict: true,
-  plugins: [Object(vuex_persistedstate__WEBPACK_IMPORTED_MODULE_2__["default"])()],
-  state: {
-    user: null,
-    isUserLoggedIn: false,
-    token: null
-  },
-  mutations: {
-    setToken: function setToken(state, token) {
-      state.token = token;
-
-      if (token) {
-        state.isUserLoggedIn = true;
-      } else {
-        state.isUserLoggedIn = false;
-      }
-    },
-    setUser: function setUser(state, user) {
-      state.user = user;
-    }
-  },
-  actions: {
-    setToken: function setToken(_ref, token) {
-      var commit = _ref.commit;
-      commit('setToken', token);
-    },
-    setUser: function setUser(_ref2, user) {
-      var commit = _ref2.commit;
-      commit('setUser', user);
-    }
-  }
+  plugins: [Object(vuex_persistedstate__WEBPACK_IMPORTED_MODULE_2__["default"])()]
 }));
 
 /***/ }),

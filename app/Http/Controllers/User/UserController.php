@@ -24,7 +24,7 @@ class UserController extends Controller
                 ->orWhere('username', 'like', '%' . $this->request['keyword'] . '%');
         }
         $this->response['pagination']=$users->select([  '_id','username','email','firstname','lastname','type','status','created_at','updated_at'])
-            ->paginate(1);
+            ->paginate(10);
         return $this->response;
     }
 

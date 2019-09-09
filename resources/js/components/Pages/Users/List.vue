@@ -1,8 +1,8 @@
 <template>
     <div class="card-box">
         <div class="table-rep-plugin">
-            <div class="table-responsive" data-pattern="priority-columns">
-                <table id="tech-companies-1" class="table  table-striped">
+            <div class="table-responsive" >
+                <table class="table  table-striped">
                     <thead>
                     <tr>
                         <th data-priority="1">No</th>
@@ -15,15 +15,17 @@
 
                     </tr>
                     </thead>
+
                     <tbody>
-                    <tr v-for="(item,index) in pagination.data">
-                        <th>{{index+1}}</th>
+
+                    <tr :key="index" v-for="(item,index) in pagination.data">
+                        <td>GOOG <span class="co-name">Google Inc.</span></td>
                         <td>{{item.username}}</td>
                         <td>{{item.firstname}} {{item.lastname}} </td>
                         <td>{{item.email}}</td>
                         <td>{{item.type}}</td>
                         <td>{{item.status}}</td>
-                        <td>{{new Date(item.created_at*1000).toLocaleString()}}</td>
+                        <td>{{new Date(item.created_at * 1000).toLocaleString()}}</td>
                     </tr>
 
 
@@ -43,7 +45,7 @@
                     </paginate>
                 </div>
             </div>
-            </div>
+        </div>
 
     </div>
 
@@ -71,10 +73,10 @@
             }
         },
         created() {
-            this.load();
+
         },
         mounted() {
-
+            this.load();
             //example socket
             // this.$socket.emit('client_clear_time');
             // this.$socket.emit("status_button_client",{user:this.getStoreUser()});

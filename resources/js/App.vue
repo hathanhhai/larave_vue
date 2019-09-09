@@ -8,16 +8,9 @@
             <div class="container">
                 <Notification></Notification>
                 <Breadcrumb></Breadcrumb>
-
-
                 <router-view></router-view>
-
             </div>
             <!-- end container -->
-
-
-
-
 
         </div>
     </div>

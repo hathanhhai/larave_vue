@@ -39,10 +39,10 @@ class LoginController extends Controller
 
     public function loginView()
     {
-        $user = User::find('5ce64a13c8474b2370004ba2');
-        $user->password = bcrypt('admin');
-        $user->update();
-        die("3");
+//        $user = User::find('5ce64a13c8474b2370004ba2');
+//        $user->password = bcrypt('admin');
+//        $user->update();
+//        die("3");
         if (Auth::check()) {
             return \redirect('/dashboard');
         }
