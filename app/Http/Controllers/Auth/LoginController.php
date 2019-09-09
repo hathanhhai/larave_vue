@@ -71,7 +71,7 @@ class LoginController extends Controller
                     if(env('DASHBOARD') == true){
                         return \redirect(config("app.dashboard").'/spa');
                     }else{
-                        return \redirect(config("app.dashboard").'/administrator');
+                        return \redirect(config("app.dashboard").'/main');
                     }
 
                     

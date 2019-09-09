@@ -4,7 +4,7 @@
         'namespace' => 'App\Http\Controllers\Admins',
         'router' => [
             'spa'=>'\Dashboard\ADashboardController',
-            'index'=>'\Dashboard\AHomeController',
+            'main'=>'\Dashboard\AHomeController',
             'user'=>'\User\AUserController',
         ]
     ];

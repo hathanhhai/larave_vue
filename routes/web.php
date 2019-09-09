@@ -14,7 +14,7 @@
  Route::get('/', ['uses' => 'Auth\LoginController@loginView', 'as' => 'loginView']);
  Route::get('/logout', ['uses' => 'Auth\LoginController@logout'] );
  Route::post('/login', ['uses' => 'Auth\LoginController@login', 'as' => 'login']);
- Route::get('/dashboard',function() {return redirect("dashboard/index");});
+ Route::get('/dashboard',function() {return redirect("dashboard/main");});
 
 Route::any(config('app.service').'/{controller?}/{method?}', function ($controller = null, $method = null) {
   

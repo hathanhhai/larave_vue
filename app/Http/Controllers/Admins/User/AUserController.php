@@ -17,7 +17,7 @@ class AUserController extends Controller
     public function index(){
         return view("admins.pages.users.index");
     }
-    public function _actionPostUserList()
+    public function _actionGetUserList()
     {
 
         $users = User::orderBy('created_at', 'desc');
