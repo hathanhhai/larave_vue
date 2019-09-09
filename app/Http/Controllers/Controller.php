@@ -20,13 +20,13 @@ class Controller extends BaseController
     {
         $request = request();
         $this->request = $request->toArray();
+       
         $this->request['ajax'] = $request->ajax();
         $this->request['client_method'] = $request->method();
-        $this->request['admin_prefix'] = config('app.admin_prefix');
-        $this->dataSendView['admin_prefix'] = config('app.admin_prefix');
-        $this->dataSendView['client_prefix'] = config('app.client_prefix');
+        $this->dataSendView['prefix_service'] = config('app.service');
+        $this->dataSendView['prefix_dashboard'] = config('app.dashboard');
         $this->dataSendView['user'] = Auth::user();
-        $this->client_prefix = $this->dataSendView['client_prefix'];
+    
         $this->limit_admin = 10;
         $this->response = [
             'error' => false,

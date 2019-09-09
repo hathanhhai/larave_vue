@@ -1,13 +1,10 @@
 <?php
 return [
-    'namespace' => 'App\Http\Controllers',
+    'namespace' => 'App\Http\Controllers\Admins',
     'router' => [
-
-        'authentication'=>'\Auth\LoginController',
-        'app'=>'\App\AppController',
-        'order'=>'\App\OrderController',
-        'dashboard'=>'\App\AppController',
-        'admin'=>'\Dashboard\DashboardController',
-        'user'=>'\User\UserController',
+        'dashboard'=>'\Dashboard\ADashboardController',
+        'administrator'=>'\Dashboard\AHomeController',
+        'user'=>'\User\AUserController',
+ 
     ]
 ];

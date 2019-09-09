@@ -15,8 +15,8 @@ return [
 
     'name' => env('APP_NAME', 'Laravel'),
 
-    'admin_prefix' => 'administrator',
-    'client_prefix' => 'client',
+    'service' => 'service',
+    'dashboard' => 'dashboard',
 
     /*
     |--------------------------------------------------------------------------

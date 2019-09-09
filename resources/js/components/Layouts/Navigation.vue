@@ -13,6 +13,10 @@
                         <router-link  to="/user"><i class="zmdi zmdi-collection-text"></i><span> User </span> </router-link>
                     
                     </li>
+                     <li class="has-submenu">
+                        <router-link  to="/zalo"><i class="zmdi zmdi-collection-text"></i><span> Zalo </span> </router-link>
+                    
+                    </li>
 
                     <li class="has-submenu">
                   

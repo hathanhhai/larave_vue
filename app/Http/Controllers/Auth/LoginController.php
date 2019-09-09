@@ -68,7 +68,13 @@ class LoginController extends Controller
 
             if (Auth::attempt(['username' => $this->request['username'], 'password' => $this->request['password']])) {
                 if (Auth::user()->type == 'admin') {
-                    return \redirect('/dashboard');
+                    if(env('DASHBOARD') == true){
+                        return \redirect(config("app.dashboard").'/spa');
+                    }else{
+                        return \redirect(config("app.dashboard").'/administrator');
+                    }
+
+                    
                 }
             } else {
                 Session::flash('authentication_fail', 'Tên đăng nhập hoặc mật khẩu không đúng');
@@ -87,7 +93,7 @@ class LoginController extends Controller
     {
 
         Auth::logout();
-        return redirect('/authentication/loginView');
+        return redirect('/');
 
     }
 

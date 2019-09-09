@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import UserPage from '../components/Pages/Users';
+import ZaloPage from '../components/Pages/Zalo';
 import Dashboard from '../components/Pages/index.vue';
 
 
@@ -17,6 +18,13 @@ const router = new Router({
             path: '/user',
             name: 'index',
             component: UserPage,
+            mode: 'history'
+
+        }
+        , {
+            path: '/zalo',
+            name: 'index',
+            component: ZaloPage,
             mode: 'history'
 
         }

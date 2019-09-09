@@ -12,10 +12,12 @@
 */
 
  Route::get('/', ['uses' => 'Auth\LoginController@loginView', 'as' => 'loginView']);
+ Route::get('/logout', ['uses' => 'Auth\LoginController@logout'] );
  Route::post('/login', ['uses' => 'Auth\LoginController@login', 'as' => 'login']);
+ Route::get('/dashboard',function() {return redirect("dashboard/index");});
 
-
-Route::any('/{controller?}/{method?}', function ($controller = null, $method = null) {
+Route::any(config('app.service').'/{controller?}/{method?}', function ($controller = null, $method = null) {
+  
     $controller = $controller ? $controller : 'home';
     $method = isset($method) ? $method : 'index';
     $app_controller = config('router.router');
@@ -52,7 +54,8 @@ Route::any('/{controller?}/{method?}', function ($controller = null, $method = n
 
 //route management
 
-Route::any('/management/{controller?}/{method?}', function ($controller = null, $method = null) {
+Route::any(config('app.dashboard').'/{controller?}/{method?}', function ($controller = null, $method = null) {
+
     $controller = $controller ? $controller : 'home';
     $method = isset($method) ? $method : 'index';
     $app_controller = config('router_management.router');
